@@ -2,8 +2,8 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route('/submit', methods=['POST'])
-def submit_form():
+@app.route('/index', methods=['POST'])
+def index_form():
     username = request.form['username']
     mail = request.form['mail']
     password = request.form['password']
